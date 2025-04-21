@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-works-portfolio p{
+    width: 100%;
+    text-align: center;
+    color: rgb(239, 157, 55);
+}
+
+.container-works-portfolio h1{
+    width: 100%;
+    text-align: center;
+    padding: 100px 0 10px ;
+    color: rgb(239, 157, 55);
+}
+
+.container-background-home{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(237, 155, 40, 0.45),rgba(253, 0, 177, 0.3)), url("/Images/index_images/background.png");
+    background-size:cover;
+    background-position: center;
+}
+
+.container-background-portfolio{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(221, 221, 221, 0.45),rgba(239, 156, 55, 0.232)), url("/Images/portfolio_images/background_portfolio.png");
+    background-size:cover;
+    background-position: center;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    
+}
+
+ul{
+    list-style:none;
+    width: 100%;
+    text-align:center;
+}
+
+ul li{
+    display: inline-block;
+    margin:10px 20px;
+}
+
+ul li a{   
+    text-decoration: none;
+    color: white;
+    font-family: "Tiny5", sans-serif;
+    font-size: 20px;
+
+}
+
+.nav-portfolio ul li a{
+    text-decoration: none;
+    color: rgb(239, 157, 55);
+    font-family: "Tiny5", sans-serif;
+    font-size: 20px;
+}
+
+
+.logo{
+    animation-name: Spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+
+@keyframes Spin {
+
+    to{
+        transform: rotate(360deg) ;
+     }
+
+}
+
+.container-works-portfolio{
+    padding: 1rem;
+    
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+
+.container-box{
+    padding: 50px 100px;
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    background-image:linear-gradient(rgba(237, 155, 40, 0.45),rgba(253, 0, 177, 0.3));
+}
+
+.image-of-me{
+    max-width: 100%;
+    max-height:100%;
+    border-radius: 20%;
+    border: 4px solid white;
+}
+
+.about-me-text h1{
+    padding: 10px 0;
+    font-size: 50px;
+    font-family: "Tiny5", sans-serif;
+}
+
+.about-me-text{
+    color: white;
+}
+
+
+/* CONTACT PAGE */
+
+.image-arrow{
+    width: 25px;
+}
+
+
+.container-contact{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2{
+    color: white;
+    font-family: "Tiny5", sans-serif;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contacts-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contacts-inputs:focus{
+    border: 2px solid rgb(253, 172, 32);
+    
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contacts-inputs::placeholder{
+    color: #a9a9a9;
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 15px;
+    color: white;
+    gap: 10px;
+    border:none;
+    border-radius: 50px;
+   background: linear-gradient(270deg,rgb(239, 157, 55),rgba(253, 0, 177, 0.3));
+   cursor: pointer;
+}
+
+.contact-right img{
+    padding: 5px;
+    height: 200px;
+    animation-name: Jump;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: ease-in-out; */
+
+}
+
+.gameboy-A{
+    animation-name: Jump;
+    animation-delay: .1s;
+}
+.gameboy-B{
+    animation-name: Jump;
+    animation-delay: .3s;
+}
+.gameboy-C{
+    animation-name: Jump;
+    animation-delay: .6s;
+}
+
+
+
+@keyframes Jump {
+    0%, 100%{ transform: translateY(0); }
+    50% { transform: translateY(20px); }
+}
+
+
+
+
+
+
+
+
+@media (max-width:800px) {
+    .contacts-inputs{
+        width:80vh;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+

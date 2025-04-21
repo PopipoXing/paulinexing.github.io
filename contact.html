@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="pauline xing">
+    <meta name="description" content="this is Pauline Xing's website">
+    <title>Pauline Xing Website and Portfolio</title>
+    <link href="Styling/style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+
+</head>
+<body class="container-background-home">
+    
+    <header>
+        <img src="Images/index_images/logo_white.png" class="logo" alt="icon of a little white gameboy spinning">
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="header-link-style">Home</a></li>
+                <li><a href="portfolio.html" class="header-link-style">My Work</a></li>
+                <li><a href="contact.html" class="header-link-style">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    
+    <!-- Contact form created following this tutorial https://www.youtube.com/watch?v=-HeadgoqJ7A -->
+
+<section class="container-contact">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+
+        <div class="contact-left-title">
+            <h2>CONTACT ME</h2>
+            <hr>
+        </div>
+        <input type="hidden" name="access_key" value="825f7ef0-9448-44f5-95c4-2cb958ea47d4">
+        <input type="text" name="name" placeholder="Your Name" class="contacts-inputs" required>
+        <input type="email" name="email" placeholder="Your Email" class="contacts-inputs" required>
+        <textarea name="message" placeholder="Your Message" class="contacts-inputs" required></textarea>
+        <button type="submit">Submit <img class="image-arrow" src="Images/contact_images/Arrow.png" alt=""></button>
+    </form>
+
+    <div class="contact-right">
+
+        <img class="gameboy-A" src="Images/contact_images/Game_Boy_A.png" alt="bic icon of a white gameboy jumping up and down">
+
+        <img class="gameboy-B" src="Images/contact_images/Game_Boy_B.png" alt="bic icon of a green gameboy jumping up and down">
+
+        <img class="gameboy-C" src="Images/contact_images/Game_Boy_C.png" alt="bic icon of a dark green gameboy jumping up and down">
+    </div>
+</section>
+
+</body>
+</html>
