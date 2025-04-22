@@ -110,6 +110,7 @@ ul li a{
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
+    max-width: 48rem;
 }
 
 .slider-nav{
