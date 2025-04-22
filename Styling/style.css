@@ -19,7 +19,7 @@
 .container-background-home{
     min-height: 100vh;
     width: 100%;
-    background-image:linear-gradient(rgba(237, 155, 40, 0.45),rgba(253, 0, 177, 0.3)), url("/Images/index_images/background.png");
+    background-image:linear-gradient(rgba(237, 155, 40, 0.45),rgba(253, 0, 177, 0.3)), url("../Images/index_images/background.png");
     background-size:cover;
     background-position: center;
 }
@@ -27,7 +27,7 @@
 .container-background-portfolio{
     min-height: 100vh;
     width: 100%;
-    background-image:linear-gradient(rgba(221, 221, 221, 0.45),rgba(239, 156, 55, 0.232)), url("/Images/portfolio_images/background_portfolio.png");
+    background-image:linear-gradient(rgba(221, 221, 221, 0.45),rgba(239, 156, 55, 0.232)), url("../Images/portfolio_images/background_portfolio.png");
     background-size:cover;
     background-position: center;
 }
